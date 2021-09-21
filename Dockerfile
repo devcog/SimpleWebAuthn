@@ -10,9 +10,9 @@ RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
 
-# start will run ts build 
+# start will run ts build
 RUN npm start
 
 # Port to expose
-EXPOSE 8000
+EXPOSE 443
 
