@@ -14,5 +14,5 @@ RUN npm install
 RUN npm start
 
 # Port to expose
-EXPOSE 443
+EXPOSE 8000
 
