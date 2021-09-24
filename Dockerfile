@@ -1,3 +1,4 @@
+#get node 14
 FROM node:14
 
 # Create app directory
@@ -14,5 +15,5 @@ RUN npm install
 RUN npm start
 
 # Port to expose
-EXPOSE 443
+EXPOSE 8080
 
