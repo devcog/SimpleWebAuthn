@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 
 COPY . /usr/src/app
 
+# move into the example folder of the monorepo
 WORKDIR /usr/src/app/example
 RUN npm install
 # If you are building your code for production
