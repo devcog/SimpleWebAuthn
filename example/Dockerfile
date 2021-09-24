@@ -4,7 +4,7 @@ FROM node:14
 # Create app directory
 WORKDIR /usr/src/app
 
-COPY . /usr/src/app
+COPY .. /usr/src/app
 
 # move into the example folder of the monorepo
 WORKDIR /usr/src/app/example
