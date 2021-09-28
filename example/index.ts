@@ -63,7 +63,7 @@ if (ENABLE_CONFORMANCE === 'true') {
  * RP ID represents the "scope" of websites on which a authenticator should be usable. The Origin
  * represents the expected URL from which registration or authentication occurs.
  */
-export const rpID = 'auth.authmosis.com';
+export const rpID = 'localhost';
 // This value is set at the bottom of page as part of server initialization (the empty string is
 // to appease TypeScript until we determine the expected origin based on whether or not HTTPS
 // support is enabled)
@@ -296,9 +296,9 @@ if (ENABLE_HTTPS) {
       console.log(`🚀 Server ready at ${expectedOrigin} (${host}:${port})`);
     });
 } else {
-  const host = '0.0.0.0';
+  const host = '127.0.0.1';
   const port = 8080;
-  expectedOrigin = `http://${rpID}:${port}`;
+  expectedOrigin = `http://localhost:${port}`;
 
   http.createServer(app).listen(port, host, () => {
     console.log(`🚀 Server ready at ${expectedOrigin} (${host}:${port})`);
