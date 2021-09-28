@@ -123,7 +123,8 @@ app.get('/generate-registration-options', (req, res) => {
     excludeCredentials: devices.map(dev => ({
       id: dev.credentialID,
       type: 'public-key',
-      transports: ['usb', 'ble', 'nfc', 'internal'],
+      /*transports: ['usb', 'ble', 'nfc', 'internal'],*/
+      transports: ['internal'],
     })),
     /**
      * The optional authenticatorSelection property allows for specifying more constraints around
