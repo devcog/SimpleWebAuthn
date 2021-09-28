@@ -124,6 +124,7 @@ app.get('/generate-registration-options', (req, res) => {
       id: dev.credentialID,
       type: 'public-key',
       /*transports: ['usb', 'ble', 'nfc', 'internal'],*/
+      /*testing just internal*/
       transports: ['internal'],
     })),
     /**
