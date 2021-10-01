@@ -63,7 +63,7 @@ if (ENABLE_CONFORMANCE === 'true') {
  * RP ID represents the "scope" of websites on which a authenticator should be usable. The Origin
  * represents the expected URL from which registration or authentication occurs.
  */
-export const rpID = 'localhost';
+export const rpID = 'auth.authmosis.com';
 // This value is set at the bottom of page as part of server initialization (the empty string is
 // to appease TypeScript until we determine the expected origin based on whether or not HTTPS
 // support is enabled)
